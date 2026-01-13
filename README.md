@@ -1,5 +1,5 @@
 # SOC-SIEM-HOMELAD-Attack-Box-and-Defense
-Project LAB:
+**Project LAB:**
 
 Welcome to my 1st personal Security Operations Center (SOC) training lab project!
 This repository documents how I set up a home lab to practice real‑world attack simulation and endpoint detection using tools Sliver (C2) and LimaCharlie (SIEM/EDR) — all running on virtual machines.
@@ -8,7 +8,7 @@ Refernce Eric Capuano's Guide: https://www.youtube.com/watch?v=oOzihldLz7U&list=
 AND 
 https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-intro?utm_campaign=post&utm_medium=web
 
-Project Overview
+Project Overview:
 
 This lab isn’t theoretical — it’s hands‑on. I built it to:
 
