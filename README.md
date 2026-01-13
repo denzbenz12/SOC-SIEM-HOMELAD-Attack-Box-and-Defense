@@ -11,6 +11,7 @@ https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-intro?utm_campaign=p
 Project Overview
 
 This lab isn’t theoretical — it’s hands‑on. I built it to:
+
 Spin up a controlled cyber attack environment
 Generate adversary traffic using Sliver
 Collect, analyze, and respond to logs using LimaCharlie as the SIEM/EDR
