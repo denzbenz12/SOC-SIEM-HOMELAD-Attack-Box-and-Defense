@@ -12,9 +12,14 @@ Project Overview
 
 This lab isn’t theoretical — it’s hands‑on. I built it to:
 
+
 Spin up a controlled cyber attack environment
+
 Generate adversary traffic using Sliver
+
 Collect, analyze, and respond to logs using LimaCharlie as the SIEM/EDR
+
 Improve my threat detection and incident handling skills
+
 
 All activity happens within virtual machines I manage, so nothing touches external networks without my control.
