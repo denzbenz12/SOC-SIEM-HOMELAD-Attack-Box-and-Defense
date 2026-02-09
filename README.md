@@ -79,3 +79,20 @@ At this stage, I move beyond simple detection and start using LimaCharlie to act
 <img width="1112" height="246" alt="Screenshot 2026-01-26 224332" src="https://github.com/user-attachments/assets/08c5c550-577a-4ac7-8d7b-7f780617c6b0" />
 <img width="1889" height="348" alt="Screenshot 2026-01-26 224455" src="https://github.com/user-attachments/assets/75da3c83-8a73-4498-b540-a5b6e761fd09" />
 
+The next objective was to move beyond manual analysis and build detections that trigger automatically when malicious files appear in sensitive locations or when malicious processes begin execution.
+
+I created and deployed custom YARA rules specifically designed to detect Sliver payloads, then integrated them with LimaCharlie Detection & Response (D&R) rules. These rules generated alerts for YARA detections, scanned newly dropped executables in user Downloads directories, and scanned running processes launched from those locations using process IDs for in-memory detection.
+<img width="1256" height="610" alt="Screenshot 2026-02-04 165227" src="https://github.com/user-attachments/assets/896ed82f-e7eb-4a2e-8b02-09c0e4fc81d3" />
+<img width="1884" height="472" alt="Screenshot 2026-02-04 165255" src="https://github.com/user-attachments/assets/c68d6a2c-7048-4118-870f-52652d96a006" />
+<img width="1229" height="708" alt="Screenshot 2026-02-04 165419" src="https://github.com/user-attachments/assets/aa6f4319-030d-4d7e-aa0c-8898aa9fcd18" />
+<img width="1249" height="746" alt="Screenshot 2026-02-04 165429" src="https://github.com/user-attachments/assets/915f0673-dffe-4475-bb1a-e7338cc02fce" />
+<img width="1273" height="814" alt="Screenshot 2026-02-04 165442" src="https://github.com/user-attachments/assets/23f7f153-d095-4dcf-828a-686307f57d0d" />
+<img width="1296" height="857" alt="Screenshot 2026-02-04 165452" src="https://github.com/user-attachments/assets/d8f4b9c0-f046-40f7-9b6a-b0e535823766" />
+<img width="1296" height="798" alt="Screenshot 2026-02-04 165724" src="https://github.com/user-attachments/assets/44bd9b29-17d8-4337-ab07-cd16b0cb2059" />
+<img width="1219" height="778" alt="Screenshot 2026-02-04 165731" src="https://github.com/user-attachments/assets/228d15eb-9f92-428e-8d5b-9ecaf66afc86" />
+
+Finally, I validated the detections by simulating real-world attacker behavior—moving and executing the Sliver payload to trigger file and process events. The result was successful, automated detection of a C2 implant the moment it was dropped or executed, demonstrating how YARA can be effectively used in real SOC workflows for malware detection, threat hunting, and incident response.
+
+<img width="983" height="513" alt="Screenshot 2026-02-04 170033" src="https://github.com/user-attachments/assets/c2f0e93c-b678-4247-9b25-814891794d4a" />
+<img width="1606" height="353" alt="Screenshot 2026-02-04 170820" src="https://github.com/user-attachments/assets/6194ebc2-5cc3-4e11-92bb-44f641592335" />
+
