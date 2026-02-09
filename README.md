@@ -1,4 +1,4 @@
-# SOC SIEM HOMELAD Attack Box and Defense
+# SOC SIEM/EDR HOMELAD Attack Box and Defense
 # Project LAB:
 
 Welcome to my 1st personal Security Operations Center (SOC) training lab project!
