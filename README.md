@@ -25,12 +25,17 @@ This lab isn’t theoretical — it’s hands‑on. I built it to:
 All activity happens within virtual machines I manage, so nothing touches external networks without my control.
 
 ### <ins>Setup:</ins>
+<img width="1910" height="801" alt="Screenshot 2026-01-26 202240" src="https://github.com/user-attachments/assets/6527b4ec-4e2f-489a-8991-cc75c8ca6586" />
+<img width="1620" height="820" alt="Screenshot 2026-01-26 202440" src="https://github.com/user-attachments/assets/8e1d0e1d-5d29-43c0-b38d-8a6524126165" />
+<img width="947" height="353" alt="Screenshot 2026-01-26 202717" src="https://github.com/user-attachments/assets/905a07c9-82af-44dc-84b5-d18265f2f22e" />
+<img width="955" height="335" alt="Screenshot 2026-01-26 202823" src="https://github.com/user-attachments/assets/68842be2-9249-4a6b-8a75-b81b0ce99529" />
 
 
 The first thing I did was set up both virtual machines for the lab. My attack machine is running Ubuntu Server, while the endpoint is a Windows 11 system. To make sure the lab runs properly and I can observe attacker behavior without interference, I disabled Microsoft Defender along with other built‑in protections. On the Ubuntu machine, I installed Sliver as my main attack framework. On the Windows endpoint, I set up LimaCharlie to act as my EDR solution, deploying a sensor to the system and configuring it to ingest Sysmon logs for detailed visibility
 
 ### <ins>The Attacks and the Defense (Full Process Breakdown):</ins>
-<img width="1910" height="896" alt="Screenshot 2026-01-26 202240" src="https://github.com/user-attachments/assets/1a66f88c-ba30-4273-8762-f6c9637aaea7" />
+
+
 
 
 The next step in the lab is generating a payload using Sliver and deploying it to the Windows endpoint. Once the payload is executed on the host machine, it establishes a command‑and‑control session back to the attack server, allowing me to interact with the system and simulate attacker activity.
